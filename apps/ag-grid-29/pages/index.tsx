@@ -1,11 +1,17 @@
 import { AgGridReact } from "ag-grid-react";
 import { data } from "@org/ag-data";
 import { useMemo, useState } from "react";
+import { LicenseManager as ClientLicenseManager } from "ag-grid-enterprise";
 
 import "ag-grid-enterprise/dist/styles/ag-grid.css";
 import "ag-grid-enterprise/dist/styles/ag-theme-balham.css";
 import { ColDef, ColGroupDef } from "ag-grid-community";
 import { RowGroupingModule } from "@ag-grid-enterprise/row-grouping";
+
+
+// This will break next js
+// ClientLicenseManager.setLicenseKey("");
+
 
 
 function numberParser(params) {
