@@ -1,17 +1,21 @@
 {
-  "name": "web",
+  "name": "ag-grid-27",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3027",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@org/ag-data": "workspace:*",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "ag-grid-community": "~27.2.1",
+    "ag-grid-enterprise": "~27.2.1",
+    "ag-grid-react": "~27.2.1",
     "ui": "workspace:*"
   },
   "devDependencies": {
@@ -20,6 +24,6 @@
     "@types/react-dom": "^18.0.7",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
-    "typescript": "^4.5.3"
+    "typescript": "^5"
   }
 }

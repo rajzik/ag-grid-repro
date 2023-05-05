@@ -1,17 +1,23 @@
 {
-  "name": "docs",
+  "name": "ag-grid-29",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3001",
+    "dev": "next dev -p 3029",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@org/ag-data": "workspace:*",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "ag-grid-community": "latest",
+    "ag-grid-enterprise": "latest",
+    "ag-grid-react": "latest",
+    "@ag-grid-community/core": "latest",
+    "@ag-grid-enterprise/row-grouping": "latest",
     "ui": "workspace:*"
   },
   "devDependencies": {
@@ -20,6 +26,6 @@
     "@types/react-dom": "^18.0.7",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
-    "typescript": "^4.5.3"
+    "typescript": "^5"
   }
 }
